@@ -12,7 +12,7 @@
     <meta charset="utf-8"/>
 </head>
 
-<body style="background-color: #39AACF">
+<body style="background-color: #39AACE">
     <header>
 
     </header>

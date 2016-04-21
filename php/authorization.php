@@ -1,8 +1,9 @@
 <?php
     include 'connectToDB.php';
     $login = $_POST['login'];
-    $pass = $_POST['password'];
-    $query= "SELECT * FROM users WHERE login LIKE '".$login."' AND pass LIKE '".$pass."'";
+    $pass = md5($_POST['password']);
+    $query= "SELECT * FROM users WHERE login = '".$login."' AND pass = '".$pass."'";
+
     $result = mysql_query($query);
     //$result = mysql_fetch_array($result);
 
